@@ -1,0 +1,22 @@
+---
+title: "Index page"
+carousel:
+    - image: _images/unsplash-1.jpg
+      alt: foooo
+    - image: _images/unsplash-2.jpg
+      alt: foooo
+reto: "Just a test string"
+---
+
+Minimal website project to highlight the issue of reading
+list-information from yml meta.
+
+This `index.qmd` contains `{{{< carousel >}}}` which uses the
+`carousel` function from `carousel.lua`. The lua script
+accesses `meta.reto` (a simple string) which works as intended,
+and tries to access `meta.carousel`, a list.
+
+This throws a warning when rendering.
+
+{{< carousel >}}
+
